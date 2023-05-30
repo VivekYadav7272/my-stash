@@ -14,4 +14,4 @@ vercel_runtime = {version = "0.3"}
 
 [[bin]]
 name = "chad-handler"
-path = "src/hello_world_handler.rs"
+path = "api/hello_world_handler.rs"
