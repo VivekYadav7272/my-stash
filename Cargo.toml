@@ -7,11 +7,15 @@ edition = "2021"
 
 [dependencies]
 tokio = {version = "1", features = ["macros"] }
-serde_json = { version = "1", features = ["raw_value"] }
 # Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
-vercel_runtime = {version = "0.3"}
-
+vercel_runtime = "1.0.2"
+mongodb = "2.5.0"
+urlencoding = "2.1.2"
+pbkdf2 = "0.12.1"
+serde = "1.0.167"
+futures = "0.3.28"
+serde_json = "1.0.100"
 
 [[bin]]
-name = "chad-handler"
-path = "api/hello_world_handler.rs"
+name = "get-vault"
+path = "api/get_vault.rs"
